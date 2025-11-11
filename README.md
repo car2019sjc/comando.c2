@@ -2,364 +2,191 @@
 
 ## Modelo Mental Completo para Segurança Pública e Defesa
 
-Uma aplicação web moderna e interativa para documentação e visualização de Centros de Comando e Controle, com interface completamente reformulada.
+[![Deploy Status](https://github.com/car2019sjc/comando.c2/actions/workflows/deploy.yml/badge.svg)](https://github.com/car2019sjc/comando.c2/actions/workflows/deploy.yml)
+[![Live Demo](https://img.shields.io/badge/demo-live-success)](https://car2019sjc.github.io/comando.c2/)
 
----
+Uma aplicação web interativa e moderna para visualização e exploração do modelo mental completo de Centros de Comando e Controle aplicados à segurança pública e defesa.
 
-## ✨ Funcionalidades Principais
+## 🎯 Sobre o Projeto
+
+Esta aplicação foi desenvolvida para apresentar de forma organizada e visualmente atraente o modelo mental completo de Centros C2, incluindo:
+
+- **Conceitos Fundamentais** de sistemas de comando e controle
+- **Tecnologias** utilizadas em implementações reais
+- **Arquiteturas** e componentes de sistemas C2
+- **Casos de Uso** e implementações globais
+- **Análise de Riscos** e segurança crítica
+- **Requisitos Técnicos** detalhados
+
+## ✨ Funcionalidades
 
 ### 🎨 Interface Moderna
-- **Glassmorphism**: Efeito de vidro fosco em painéis
-- **Gradientes**: Cores harmoniosas e profissionais
-- **Animações**: Transições suaves e elegantes
-- **Responsiva**: Funciona perfeitamente em qualquer dispositivo
+- **Cards Interativos**: Visualização em grid responsivo dos componentes principais
+- **Modal Detalhado**: Expansão completa com detalhes formatados e sub-componentes
+- **Navegação Hierárquica**: Sistema de navegação por níveis com histórico
+- **Modo Escuro/Claro**: Alternância suave entre temas
 
-### 🌙 Modo Escuro/Claro
-- Alternância instantânea entre temas
-- Persistência da preferência do usuário
-- Animações suaves de transição
-- Cores otimizadas para ambos os modos
+### 📋 Formatação Inteligente
+- **Detecção Automática**: Identifica seções, listas e palavras-chave
+- **Destaques Visuais**: Siglas, valores e termos técnicos em destaque
+- **Estruturação Clara**: Parágrafos, badges e marcadores visuais
+- **Leitura Otimizada**: Layout organizado para fácil compreensão
 
-### 🔍 Busca Inteligente
-- Busca em tempo real
-- Highlighting de termos encontrados
-- Busca em títulos, descrições e detalhes
-- Contador de resultados
+### ⭐ Recursos Adicionais
+- **Sistema de Favoritos**: Marque componentes importantes
+- **Breadcrumbs**: Visualize o caminho de navegação
+- **Animações Suaves**: Transições elegantes e responsivas
+- **Totalmente Responsivo**: Funciona perfeitamente em qualquer dispositivo
 
-### ⭐ Sistema de Favoritos
-- Marque itens importantes
-- Filtro "Apenas Favoritos"
-- Persistência local
-- Acesso rápido
+## 🚀 Acesso Rápido
 
-### 🕐 Histórico de Navegação
-- Botões Voltar/Avançar
-- Últimas 20 navegações
-- Sincronização automática
+**🌐 Aplicação Online**: [https://car2019sjc.github.io/comando.c2/](https://car2019sjc.github.io/comando.c2/)
 
-### 🍞 Breadcrumbs
-- Caminho completo da navegação
-- Navegação rápida por níveis
-- Visual claro e intuitivo
+## 🛠️ Tecnologias Utilizadas
 
-### 📊 Estatísticas Animadas
-- Total de componentes
-- Nós expandidos
-- Seções principais
-- Taxa de visualização com barra de progresso
+- **React 18** - Biblioteca JavaScript para interfaces
+- **TypeScript** - Tipagem estática para JavaScript
+- **Vite** - Build tool rápida e moderna
+- **Tailwind CSS** - Framework CSS utilitário
+- **Lucide React** - Ícones modernos e elegantes
+- **GitHub Pages** - Hospedagem gratuita e confiável
+- **GitHub Actions** - Deploy automático CI/CD
 
-### 📑 Painel de Detalhes com Tabs
-- **Visão Geral**: Resumo e estatísticas
-- **Detalhes**: Informações expandíveis
-- **Subitens**: Lista de componentes filhos
+## 📦 Instalação Local
 
----
+### Pré-requisitos
+- Node.js 20+ 
+- npm ou yarn
 
-## 🚀 Como Usar
+### Passos
 
-### Instalação
+1. **Clone o repositório**
+```bash
+git clone https://github.com/car2019sjc/comando.c2.git
+cd comando.c2
+```
+
+2. **Instale as dependências**
+```bash
+npm install
+```
+
+3. **Execute em modo desenvolvimento**
+```bash
+npm run dev
+```
+
+4. **Acesse no navegador**
+```
+http://localhost:5173
+```
+
+## 🔨 Scripts Disponíveis
 
 ```bash
-# Clone o repositório
-cd "Centros de Comando e Controle"
-
-# Instale as dependências (se necessário)
-npm install
-
-# Inicie o servidor de desenvolvimento
+# Desenvolvimento
 npm run dev
 
-# Ou compile para produção
+# Build para produção
 npm run build
+
+# Preview do build
+npm run preview
+
+# Linting
+npm run lint
 ```
 
-### Navegação Básica
-
-1. **Explorar**: Clique nas setas para expandir/recolher seções
-2. **Selecionar**: Clique em qualquer item para ver detalhes
-3. **Buscar**: Digite na barra de busca para encontrar rapidamente
-4. **Favoritar**: Clique na estrela para marcar itens importantes
-5. **Alternar Tema**: Clique no ícone Sol/Lua no cabeçalho
-
-### Atalhos Úteis
-
-- **Expandir Tudo**: Visualize toda a estrutura de uma vez
-- **Recolher Tudo**: Volte à visão inicial
-- **Apenas Favoritos**: Filtre para ver só itens marcados
-- **Breadcrumbs**: Navegue rapidamente pela hierarquia
-
----
-
-## 📚 Documentação
-
-- **[GUIA_USUARIO.md](GUIA_USUARIO.md)**: Tutorial completo de todas as funcionalidades
-- **[CHANGELOG.md](CHANGELOG.md)**: Histórico detalhado de mudanças
-- **[RESUMO_REFORMULACAO.md](RESUMO_REFORMULACAO.md)**: Visão executiva da reformulação
-
----
-
-## 🛠️ Tecnologias
-
-- **React 18.3.1**: Biblioteca UI
-- **TypeScript 5.5.3**: Tipagem estática
-- **Tailwind CSS 3.4.1**: Framework CSS utility-first
-- **Vite 5.4.2**: Build tool e dev server
-- **Lucide React 0.344.0**: Ícones modernos
-
----
-
-## 📂 Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
 ```
-Centros de Comando e Controle/
+comando.c2/
+├── .github/
+│   └── workflows/
+│       └── deploy.yml          # GitHub Actions workflow
 ├── src/
-│   ├── components/          # Componentes React
-│   │   ├── ConceptNodeItem.tsx
-│   │   ├── DetailPanel.tsx
-│   │   ├── StatsBar.tsx
-│   │   ├── SearchBar.tsx
-│   │   ├── ThemeToggle.tsx
-│   │   ├── Breadcrumbs.tsx
-│   │   └── NavigationControls.tsx
-│   ├── hooks/              # Hooks customizados
-│   │   ├── useTheme.ts
-│   │   ├── useSearch.ts
-│   │   ├── useFavorites.ts
-│   │   └── useHistory.ts
-│   ├── data/               # Dados da aplicação
-│   │   └── mentalModelData.ts (702 linhas)
-│   ├── App.tsx             # Componente principal
-│   ├── types.ts            # Definições TypeScript
-│   └── index.css           # Estilos globais
-├── CHANGELOG.md            # Histórico de mudanças
-├── GUIA_USUARIO.md         # Guia do usuário
-├── RESUMO_REFORMULACAO.md  # Resumo executivo
-└── README.md               # Este arquivo
+│   ├── components/             # Componentes React
+│   │   ├── ConceptCard.tsx     # Card de componente
+│   │   ├── ConceptModal.tsx    # Modal detalhado
+│   │   ├── FormattedDetail.tsx # Formatação inteligente
+│   │   └── ...
+│   ├── data/
+│   │   └── mentalModelData.ts  # Dados do modelo mental
+│   ├── hooks/                  # Custom React hooks
+│   ├── types.ts                # Definições TypeScript
+│   ├── App.tsx                 # Componente principal
+│   └── main.tsx                # Entry point
+├── index.html
+├── package.json
+├── vite.config.ts
+└── README.md
 ```
 
----
+## 🎨 Componentes Principais
 
-## 🎯 Conteúdo
+### 1. **ConceptCard**
+Cards visuais para cada componente do modelo mental, com:
+- Ícone identificador
+- Título e descrição
+- Badges informativos (detalhes, sub-itens)
+- Botão de favoritos
+- Efeitos hover elegantes
 
-A aplicação documenta os seguintes tópicos sobre Centros C2:
+### 2. **ConceptModal**
+Modal expansível com:
+- Header com navegação e ações
+- Seção de detalhes formatados
+- Grid de sub-componentes
+- Navegação hierárquica
 
-### 1. Conceitos Fundamentais
-- Arquitetura em Camadas
-- Interoperabilidade
-- Resiliência Operacional
-- Segurança em Profundidade
+### 3. **FormattedDetail**
+Sistema inteligente de formatação que:
+- Detecta seções numeradas (a), (b), (c)
+- Destaca palavras-chave e siglas
+- Formata valores e medidas
+- Cria estrutura visual clara
 
-### 2. Tecnologias de Monitoramento Fronteiriço
-- Sensores Terrestres
-- Radares e Sistemas Aéreos
-- Sistemas Satelitais
-- Drones e VANT
-- Inteligência Artificial
+## 📊 Conteúdo
 
-### 3. Sistemas de Gerenciamento de Crises
-- Comunicação Redundante
-- Mobilidade Tática
-- Análise Situacional
-- Gestão de Recursos
+O modelo mental inclui 6 seções principais:
 
-### 4. Implementações Reais
-- SISFRON (Brasil)
-- US CBP (EUA)
-- EUROSUR (União Europeia)
-- IDF C4I (Israel)
-- Smart Cities
+1. **Fundamentos de C2** - Conceitos básicos e princípios
+2. **Arquitetura de Sistemas** - Estrutura e componentes
+3. **Tecnologias Essenciais** - Ferramentas e plataformas
+4. **Implementações Reais** - Casos de uso globais
+5. **Segurança e Resiliência** - Proteção e continuidade
+6. **Gestão e Operações** - Processos e procedimentos
 
-### 5. Riscos e Vulnerabilidades
-- Vetores de Ataque
-- Impactos Operacionais
-- Mitigações
-- Resiliência
+## 🤝 Contribuindo
 
-### 6. Procedimentos Operacionais Padrão
-- Protocolos de Emergência
-- Gestão de Incidentes
-- Compliance e Auditorias
-- Manutenção Preventiva
+Contribuições são bem-vindas! Para contribuir:
 
----
+1. Faça um Fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
 
-## 🌟 Destaques da Interface
+## 📄 Licença
 
-### Antes da Reformulação
-- Interface funcional básica
-- Apenas tema claro
-- Navegação simples
-- Sem busca ou filtros
+Este projeto é de uso interno para fins educacionais e documentação técnica.
 
-### Depois da Reformulação
-- ✨ Design moderno com glassmorphism
-- 🌙 Modo escuro/claro
-- 🔍 Busca inteligente em tempo real
-- ⭐ Sistema de favoritos
-- 🕐 Histórico de navegação
-- 🍞 Breadcrumbs
-- 📊 Estatísticas animadas
-- 📑 Painel com tabs organizadas
-- 📱 Totalmente responsivo
-- ♿ Acessível
+## 👨‍💻 Autor
 
----
-
-## 💡 Casos de Uso
-
-### Para Estudantes
-- Explore a estrutura completa
-- Marque conceitos importantes como favoritos
-- Use a busca para encontrar tópicos específicos
-
-### Para Profissionais
-- Consulte rapidamente informações técnicas
-- Utilize favoritos para acesso rápido
-- Apresente usando modo escuro/claro conforme ambiente
-
-### Para Gestores
-- Visualize a estrutura hierárquica completa
-- Use estatísticas para compreensão geral
-- Navegue via breadcrumbs para contexto
-
-### Para Apresentações
-- Modo escuro para ambientes com pouca luz
-- Expandir tudo para visão completa
-- Painel de detalhes para informações específicas
-
----
-
-## 🎨 Temas
-
-### Tema Claro
-- Fundo: Gradiente azul claro/cinza
-- Painéis: Branco translúcido
-- Texto: Cinza escuro
-- Acentos: Azul vibrante
-
-### Tema Escuro
-- Fundo: Gradiente azul escuro/cinza
-- Painéis: Cinza escuro translúcido
-- Texto: Branco/cinza claro
-- Acentos: Azul claro
-
----
-
-## 📱 Responsividade
-
-### Desktop (≥ 1280px)
-- Layout em 3 colunas
-- Painel de detalhes fixo lateral
-- Todos os controles visíveis
-
-### Tablet (768px - 1280px)
-- Layout em 2 colunas
-- Painel abaixo da estrutura
-- Controles adaptados
-
-### Mobile (< 768px)
-- Layout em coluna única
-- Elementos empilhados
-- Controles simplificados
-
----
-
-## 🔒 Privacidade e Dados
-
-- ✅ **Sem servidor**: Tudo roda no navegador
-- ✅ **Sem tracking**: Sem analytics ou rastreamento
-- ✅ **Dados locais**: Favoritos e preferências salvos localmente
-- ✅ **Sem login**: Acesso livre e imediato
-
----
-
-## ⚡ Performance
-
-- Build otimizado com Vite
-- CSS via Tailwind (tree-shaking)
-- Componentes leves
-- Animações via GPU
-- Lazy evaluation
-
----
-
-## ♿ Acessibilidade
-
-- ARIA labels em todos os controles
-- Navegação por teclado
-- Alto contraste (modo escuro)
-- Foco visual claro
-- Semântica HTML
-
----
-
-## 🐛 Solução de Problemas
-
-### Interface não carrega
-```bash
-# Limpe o cache e reinstale
-rm -rf node_modules package-lock.json
-npm install
-npm run dev
-```
-
-### Tema não persiste
-- Verifique se localStorage está habilitado
-- Alguns navegadores bloqueiam em modo anônimo
-
-### Busca não encontra
-- Verifique ortografia
-- Use termos mais genéricos
-- Mínimo 2 caracteres
-
----
-
-## 📞 Suporte
-
-Para dúvidas:
-1. Consulte o [GUIA_USUARIO.md](GUIA_USUARIO.md)
-2. Revise o [CHANGELOG.md](CHANGELOG.md)
-3. Verifique o código-fonte (bem documentado)
-
----
-
-## 📈 Status do Projeto
-
-✅ **Interface**: Completamente reformulada  
-✅ **Funcionalidades**: Todas implementadas  
-✅ **Dados**: 100% preservados  
-✅ **Documentação**: Completa  
-✅ **Testes**: Compilação sem erros  
-✅ **Qualidade**: Zero warnings  
-
----
-
-## 🎉 Pronto para Usar!
-
-A aplicação está **100% funcional** e pronta para proporcionar uma experiência excepcional.
-
-Basta executar:
-```bash
-npm run dev
-```
-
-E acessar: `http://localhost:5173`
-
----
-
-## 📝 Licença
-
-Este projeto é uma documentação técnica para fins educacionais e profissionais.
-
----
+**Carlos Rodrigues**
+- GitHub: [@car2019sjc](https://github.com/car2019sjc)
 
 ## 🙏 Agradecimentos
 
-Desenvolvido com dedicação para proporcionar a melhor experiência possível na consulta e estudo de Centros de Comando e Controle.
-
-**Aproveite! 🚀**
+- Baseado em implementações reais: SISFRON, CBP, EUROSUR, IDF
+- Documentação técnica de sistemas C2 militares e de segurança pública
+- Comunidade React e desenvolvedores open source
 
 ---
 
-*Última atualização: 11 de Novembro de 2025*
+**⚠️ Nota**: Esta aplicação é parte de um projeto de documentação e não contém informações classificadas ou sensíveis.
 
+**🔗 Links Úteis**:
+- [Aplicação Online](https://car2019sjc.github.io/comando.c2/)
+- [Repositório GitHub](https://github.com/car2019sjc/comando.c2)
+- [Issues](https://github.com/car2019sjc/comando.c2/issues)
