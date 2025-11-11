@@ -37,8 +37,14 @@ function App() {
   };
 
   const handleCloseModal = () => {
-    setSelectedNode(null);
-    setModalHistory([]);
+    // Se houver histórico de navegação, volta ao nível anterior
+    if (modalHistory.length > 1) {
+      handleModalBack();
+    } else {
+      // Se não houver histórico, fecha o modal
+      setSelectedNode(null);
+      setModalHistory([]);
+    }
   };
 
   // Get main sections (level 0 children)
